@@ -1,6 +1,6 @@
 # ConditionalHttpAuth
 
-TODO: Write a gem description
+HTTP basic auth for staging environments. Can be enabled by setting environment variables.
 
 ## Installation
 
@@ -12,13 +12,18 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install conditional_http_auth
-
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+include ConditionalHttpAuth
+before_action :http_authenticate_if_needed
+```
+
+Authentication will be required if and only if the environment variables `HTTP_AUTH_USERNAME` and `HTTP_AUTH_PASSWORD` are set.
+
+## See Also
+
+* [`Rack::Auth::Basic`](https://github.com/rack/rack/blob/master/lib/rack/auth/basic.rb)
 
 ## Contributing
 

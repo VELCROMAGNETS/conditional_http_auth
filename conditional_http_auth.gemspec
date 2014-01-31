@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = ConditionalHttpAuth::VERSION
   spec.authors       = ["Brian Alexander"]
   spec.email         = ["balexand@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{HTTP basic auth for staging environments.}
+  # spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.homepage      = "https://github.com/VELCROMAGNETS/conditional_http_auth"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

@@ -1,4 +1,4 @@
-Copyright (c) 2014 Brian Alexander
+Copyright (c) 2014 Velcro Magnet LLC
 
 MIT License
 
